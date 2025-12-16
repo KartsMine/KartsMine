@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketerOS | AI Command Center</title>
+
+    <!-- Fonts: Outfit for Headings, Inter for UI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="glass-panel">
+            <div class="logo">
+                <i data-lucide="zap" class="logo-icon"></i>
+                <span>MarketerOS</span>
+            </div>
+            <nav>
+                <button class="nav-item active" data-page="dashboard">
+                    <i data-lucide="layout-dashboard"></i> Dashboard
+                </button>
+                <button class="nav-item" data-page="wizard">
+                    <i data-lucide="wand-2"></i> Campaign Wizard
+                </button>
+                <button class="nav-item" data-page="studio">
+                    <i data-lucide="palette"></i> Creative Studio
+                </button>
+
+                <div
+                    style="margin: 1rem 0 0.5rem 1rem; font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">
+                    Intelligence</div>
+
+                <button class="nav-item" data-page="competitors">
+                    <i data-lucide="swords"></i> Competitor Analysis
+                </button>
+                <button class="nav-item" data-page="trends">
+                    <i data-lucide="trending-up"></i> Trend Radar
+                </button>
+                <button class="nav-item" data-page="budget">
+                    <i data-lucide="pie-chart"></i> Budget Optimizer
+                </button>
+
+                <div
+                    style="margin: 1rem 0 0.5rem 1rem; font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">
+                    Growth Tools</div>
+
+                <button class="nav-item" data-page="growth">
+                    <i data-lucide="rocket"></i> Growth Hub
+                </button>
+                <button class="nav-item" data-page="calendar">
+                    <i data-lucide="calendar"></i> Content Calendar
+                </button>
+                <button class="nav-item" data-page="dna">
+                    <i data-lucide="fingerprint"></i> Brand DNA
+                </button>
+            </nav>
+            <div class="user-profile">
+                <div class="avatar">AI</div>
+                <div class="info">
+                    <span class="name">Director</span>
+                    <span class="status">Online</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <header class="topbar glass-panel">
+                <h1 id="page-title">Dashboard</h1>
+                <div class="actions">
+                    <button class="btn-icon" id="settings-btn">
+                        <i data-lucide="settings"></i>
+                    </button>
+                    <button class="btn-primary" id="new-campaign-btn">
+                        <i data-lucide="plus"></i> New Campaign
+                    </button>
+                </div>
+            </header>
+
+            <div id="content-area">
+                <!-- Dynamic Content Injected Here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div id="settings-modal" class="modal hidden">
+        <div class="modal-content glass-panel">
+            <h2><i data-lucide="key"></i> API Configuration</h2>
+            <p>Enter your API Key to enable live AI generation.</p>
+            <div class="input-group">
+                <label>Provider</label>
+                <select id="api-provider">
+                    <option value="openai">OpenAI (GPT-4)</option>
+                    <option value="gemini">Google Gemini</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label>API Key</label>
+                <input type="password" id="api-key" placeholder="sk-...">
+            </div>
+            <div class="modal-actions">
+                <button class="btn-secondary" id="close-settings">Cancel</button>
+                <button class="btn-primary" id="save-settings">Save & Connect</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
