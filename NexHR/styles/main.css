@@ -1,0 +1,76 @@
+:root {
+    /* Theme Colors - Corporate Light */
+    --bg-dark: #f8fafc;
+    /* Slate 50 */
+    --bg-card: #ffffff;
+    --bg-glass: #ffffff;
+    /* No transparency needed for cards */
+
+    --primary: #4f46e5;
+    /* Indigo 600 */
+    --primary-glow: rgba(79, 70, 229, 0.2);
+    --accent: #0ea5e9;
+    /* Sky 500 */
+    --secondary: #10b981;
+    /* Emerald 500 */
+
+    --text-main: #0f172a;
+    /* Slate 900 */
+    --text-muted: #64748b;
+    /* Slate 500 */
+
+    --border-glass: #e2e8f0;
+    /* Slate 200 */
+
+    /* Spacing & Radius */
+    --radius-lg: 12px;
+    --radius-md: 6px;
+    --p-md: 1.5rem;
+
+    /* Animations */
+    --transition-fast: 0.2s ease-in-out;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8fafc;
+    background-image:
+        radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.08) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(14, 165, 233, 0.08) 0px, transparent 50%);
+    background-attachment: fixed;
+    color: var(--text-main);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#app {
+    height: 100%;
+    display: flex;
+}
+
+/* Utilities */
+.glass-panel {
+    background: var(--bg-card);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.text-gradient {
+    color: var(--primary);
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    outline: none;
+}
+
+@import "modules/analytics.css";
