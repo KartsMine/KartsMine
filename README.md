@@ -1,10 +1,8 @@
-- 👋 Hi, I’m @KartsMine
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+Hi, I’m @KartsMine  
+Interests: Business analytics, marketing strategy, HR systems, AI in business  
+Currently learning: Data analytics and AI-enabled business applications  
+Open to collaboration on analytics, marketing intelligence, and HR tech projects  
 
-<!---
-KartsMine/KartsMine is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Contact:  
+Email: km486008@gmail.com | 
+LinkedIn: in/karthik-m-6b4914240
